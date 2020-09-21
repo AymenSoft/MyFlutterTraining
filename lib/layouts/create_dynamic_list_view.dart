@@ -15,6 +15,7 @@ class CreateDynamicListView extends StatelessWidget{
     var items = generateData();
     var list = ListView.builder(
       scrollDirection: Axis.vertical,
+      itemCount: items.length,
       itemBuilder: (context, position){
         return ListTile(
           leading: Icon(
@@ -45,7 +46,7 @@ class CreateDynamicListView extends StatelessWidget{
 
   //generate dynamic data to show it in list view
 List<String> generateData(){
-    var items = List<String>.generate(1000, (index) => "student ${index + 1}");
+    var items = List<String>.generate(50, (index) => "student ${index + 1}");
     return items;
 }
 
