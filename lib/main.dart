@@ -1,4 +1,4 @@
-import 'package:first_flutter_app/layouts/android_image.dart';
+import 'package:first_flutter_app/layouts/create_button.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget{
             title: Text("My Title"),
         ),
         body:  Center(
-          child: AndroidImage(),
+          child: CreateButton(),
         )
       ),
     );
