@@ -1,4 +1,4 @@
-import 'package:first_flutter_app/layouts/create_static_list_view.dart';
+import 'package:first_flutter_app/layouts/create_dynamic_list_view.dart';
 import 'package:flutter/material.dart';
 
 void main(){
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget{
             title: Text("My Title"),
         ),
         body:  Center(
-          child: CreateStaticListView(),
+          child: CreateDynamicListView(),
         )
       ),
     );
